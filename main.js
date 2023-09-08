@@ -89,7 +89,6 @@ function down()
 console.log("When down arrow is pressed, x = " + greencar_x +" | y = " +greencar_y);
 uploadBackground();
 uploadgreencar();
-
 }
 }
 //Define function to move the car left side
@@ -101,7 +100,6 @@ function left()
 	console.log("When left arrow is pressed, x = " + greencar_x +" | y = " +greencar_y);
 	uploadBackground();
 	uploadgreencar();
-	
 	}
 }
 //Define function to move the car right side
@@ -116,16 +114,4 @@ function right()
 	}
 }
 
-window.addEventListener("keydown", my_keydown);
-function my_keydown(e)
-{
-keyPressed = e.keyCode;
-console.log(keyPressed);
-if(keyPressed == '38')
-{
-up();
-console.log("up")
 
-}
-
-}
